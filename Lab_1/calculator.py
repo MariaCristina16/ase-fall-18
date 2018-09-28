@@ -2,20 +2,22 @@ m = 2;
 n = 5;
 
 
-def somma(m, n):
+def sum(m, n):
     result = m
     if n<0:
-        for i in range(abs(n)):
-            result += 1
+        for _ in range(abs(n)):
+            result -= 1
         return result
     else:
-        for i in range(n):
+        for _ in range(n):
             result += 1
         return result
 
 
 def divide(m,n):
-    result = 0;
+    if n == 0:
+        raise ZeroDivisionError
+    result = 0
     negativeResult = m>0 and n<0 or m<0 and n>0
     n= abs(n)
     m= abs(m)

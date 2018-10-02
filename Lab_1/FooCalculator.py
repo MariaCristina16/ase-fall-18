@@ -11,3 +11,9 @@ class FooCalculator:
 
     def divide(self,m,n):
     	return c.divide(m,n)
+
+    def subtract(m,n):
+    	return c.subtraction(m,n)
+
+    def multiplication(m,n):
+    	return c.multiplication(m,n)

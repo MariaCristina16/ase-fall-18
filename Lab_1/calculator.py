@@ -31,3 +31,25 @@ def divide(m,n):
     result = -result if negativeResult else result
 
     return result
+
+def subtract(m,n):
+    result = m
+    if n<0:
+        for _ in range(abs(n)):
+            result += 1
+        return result
+    else:
+        for _ in range(n):
+            result -= 1
+        return result
+
+def multiply(m,n):
+    result = 0
+    if n<0:
+        for _ in range(abs(n)):
+            result -= m
+        return result
+    else:
+        for _ in range(n):
+            result += m
+        return result
